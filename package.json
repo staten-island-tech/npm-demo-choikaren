@@ -22,9 +22,6 @@
     "sass": "^1.26.5"
   },
   "dependencies": {
-    "aos": "^2.3.4",
-    "fade": "^0.2.0",
-    "react-fade-in": "^1.0.0",
-    "react-image-gallery": "^1.0.7"
+    "aos": "^2.3.4"
   }
 }
