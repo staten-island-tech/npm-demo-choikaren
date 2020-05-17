@@ -1,123 +1,122 @@
 a:link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:visited {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-@media (min-width: $laptop) {
-    .header {
-        flex-direction: row;
-    }
-}
-
-@media (max-width: $phone) {
-    .logo {
-        width: 100%;
-    }
-    
-}
-
-.nav{
-    font-size: 2rem;
-    // font-weight: 600;
-    font-family: $mainFont;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    text-align: center;
-}
-
-@media (min-width:$tablet) {
-    .nav {
-        text-align: left;
-    }
-}
-
-@media (min-width:$laptop) {
-    .nav {
-        margin-top: 0;
-    }
+.nav {
+  font-size: 2rem;
+  // font-weight: 600;
+  font-family: $mainFont;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .nav-button {
-    color: white;
-    text-decoration: none;
-    // font-size: 2.5rem;
-    // margin-left: 2.5rem;
-    margin: 1.3rem;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  // font-size: 2.5rem;
+  // margin-left: 2.5rem;
+  margin: 1.3rem;
+  transition: 0.3s;
 }
 
 .nav-button:hover {
-    color: $goldDark;
-    // margin-left: 3rem;
+  color: $goldDark;
+  // margin-left: 3rem;
 }
 
-@media (min-width: $laptop) {
-    .nav-button {
-        margin-left: 2.5rem;
-        margin-right: 0;
-    }
-    .nav-button:hover {
-        margin-left: 3rem;
-    }
+.footer {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family: $secondaryFont;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: $goldLight;
 }
 
-.footer{
-    margin-top: 2rem;
-    font-size: 1rem;
-    font-family: $mainFont;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
+// .nav-socialMedia {
+//   text-align: center;
+// }
 
-.nav-socialMedia {
-    text-align: center;
-}
-
-@media (min-width: $laptop) {
-    .nav-socialMedia {
-        text-align: right;
-    }
-}
+// .socialMedia {
+//     margin-left: 3rem;
+//     margin-right: 3rem;
+// }
 
 .socialMedia-button {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
-
 
 .socialMedia-img {
-    width: 3rem;
-    margin: 1.1rem;
-}
-
-@media (min-width:$tablet) {
-    .socialMedia-img {
-        width:3.5rem;
-        margin: 1.5rem;
-        margin-left: 3rem;
-        margin-right: 0;
-    }
+  width: 3rem;
+  margin: .7rem;
 }
 
 .socialMedia-img:hover {
-    // transform: scale(1.1);
-    filter: brightness(1.5);
-    transition: .2s ease-in-out;
+  // transform: scale(1.1);
+  filter: brightness(1.5);
+  transition: 0.2s ease-in-out;
+}
+
+.phoneNumber {
+    margin-right: .75rem;
+}
+
+@media (max-width: $phone) {
+  .logo {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    text-align: left;
+  }
+
+  .socialMedia-img {
+    width: 3.5rem;
+    margin: 1rem;
+    // margin-left: 3rem;
+    // margin-right: 0;
+  }
+}
+
+@media (min-width: $laptop) {
+  .nav {
+    margin-top: 0;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .nav-socialMedia {
+    text-align: right;
+  }
+
+  .nav-button {
+    margin-left: 2.5rem;
+    margin-right: 0;
+  }
+  .nav-button:hover {
+    margin-left: 3rem;
+  }
 }

@@ -1,13 +1,54 @@
 .main {
   width: 100%;
   height: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   position: relative;
 }
 
 .main-img {
   width: 100%;
   position: relative;
+}
+
+.missionStatement {
+  background-color: $goldMid;
+  display: flex;
+  flex-direction: row;
+}
+
+.missionStatement-images {
+  margin-left: 5rem;
+  width: 120vw;
+}
+.missionStatement-images img {
+  width: 100%;
+}
+
+#missionStatement-text {
+  background-color: $goldLight;
+  margin: 5rem;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+}
+
+.missionStatement-text {
+  align-self: center;
+}
+
+.missionStatement-title {
+  font-family: $mainFont;
+  color: black;
+  font-size: 3.5rem;
+  margin-bottom: .5rem;
+}
+
+.missionStatement-body {
+  font-family: $secondaryFont;
+  color: $goldDark;
+  font-size: 2rem;
+  line-height: 3.25rem;
+  letter-spacing: .05rem;
 }
 
 @media (min-width:$tablet) {
