@@ -1,7 +1,6 @@
 {
-  "name": "siths-website-design",
+  "name": "npm-demo-choikaren",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
@@ -9,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/choikaren/SITHS-Website-Design.git"
+    "url": "git+https://github.com/staten-island-tech/npm-demo-choikaren.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/choikaren/SITHS-Website-Design/issues"
+    "url": "https://github.com/staten-island-tech/npm-demo-choikaren/issues"
   },
-  "homepage": "https://github.com/choikaren/SITHS-Website-Design#readme",
+  "homepage": "https://github.com/staten-island-tech/npm-demo-choikaren#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.5"
@@ -24,5 +23,6 @@
   "dependencies": {
     "aos": "^2.3.4",
     "fade": "^0.2.0"
-  }
+  },
+  "description": ""
 }

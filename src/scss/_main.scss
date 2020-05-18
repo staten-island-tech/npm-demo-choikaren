@@ -92,17 +92,20 @@
 }
 
 #academically {
-  background-color: $goldMid;
+  // background-color: $goldMid;
   padding: 4rem;
+  outline: 1rem solid $goldMid;
+  outline-offset: -1rem;
 }
 
 .academically {
   font-family: $mainFont;
   font-size: 3.5rem;
   letter-spacing: 0.15rem;
-  color: black;
+  color: $goldMid;
   text-decoration: none;
-  display: block;
+  // display: block;
+  // text-align: center;
   text-align: center;
   transition: 0.2s;
   // background-color: $goldLight;
