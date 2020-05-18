@@ -1,9 +1,9 @@
-a:link {
+nav a:link {
   color: white;
   text-decoration: none;
 }
 
-a:visited {
+nav a:visited {
   color: white;
   text-decoration: none;
 }
@@ -144,10 +144,19 @@ a:visited {
     flex-direction: row;
   }
 }
+.main a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.main a:visited {
+  text-decoration: none;
+}
+
 .main {
   width: 100%;
   height: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   position: relative;
 }
 
@@ -181,6 +190,7 @@ a:visited {
   background-color: #997300;
   outline: black 0.2rem solid;
   padding: 0.5rem;
+  color: #f7f6ee;
 }
 
 .main-text-button:hover {
@@ -195,6 +205,7 @@ a:visited {
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
+  margin-bottom: 8rem;
 }
 
 .missionStatement-images {
@@ -235,6 +246,81 @@ a:visited {
   letter-spacing: 0.05rem;
 }
 
+.academically {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.15rem;
+  color: #997300;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.academically:hover {
+  color: #c4b466;
+}
+
+#academicallySection-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.academicallySection-cards {
+  height: 20vh;
+  overflow: hidden;
+  margin: 1.2rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  position: relative;
+}
+
+.academicallySection-cards img {
+  width: 100%;
+}
+
+.card {
+  position: absolute;
+  background-color: rgba(247, 246, 238, 0.6);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: rgba(247, 246, 238, 0.9);
+  transition: 0.2s ease-in;
+}
+
+.card:hover .insideCard {
+  color: #997300;
+}
+
+.insideCard {
+  padding: 2rem;
+  text-align: center;
+  align-self: center;
+  color: black;
+}
+
+.card-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.5rem;
+}
+
+.card-body {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5rem;
+}
+
+.card-subtext {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+}
+
 @media (min-width: 400px) {
   .main-text {
     font-size: 6rem;
@@ -257,6 +343,10 @@ a:visited {
   .main-text-button {
     font-size: 1.5rem;
     padding: 0.6rem;
+  }
+
+  .academicallySection-cards {
+    height: 25vh;
   }
 }
 @media (min-width: 1000px) {
@@ -294,6 +384,10 @@ a:visited {
     font-size: 1.5rem;
     line-height: 2.25rem;
     letter-spacing: 0.05rem;
+  }
+
+  #academicallySection-cards {
+    flex-direction: rows;
   }
 }
 @media (min-width: 1400px) {
