@@ -78,14 +78,17 @@ nav a:visited {
   transition: 0.2s ease-in-out;
 }
 
+
+
 .footer-numbers {
   display: flex;
   flex-direction: column;
 }
 
 .phoneNumber {
-    margin-right: .75rem;
     transition: .1s ease-in;
+    color: white;
+    text-decoration: none;
 }
 
 .phoneNumber:hover {
@@ -94,6 +97,8 @@ nav a:visited {
 
 .faxNumber {
   transition: .1s ease-in;
+  color: white;
+  text-decoration: none;
 }
 
 .faxNumber:hover {
@@ -122,6 +127,10 @@ nav a:visited {
   .footer-numbers {
     display: flex;
     flex-direction: row;
+  }
+
+  .phoneNumber {
+    margin-right: .75rem;
   }
 }
 

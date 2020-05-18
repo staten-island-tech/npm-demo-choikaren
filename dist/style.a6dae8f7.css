@@ -70,8 +70,9 @@ nav a:visited {
 }
 
 .phoneNumber {
-  margin-right: 0.75rem;
   transition: 0.1s ease-in;
+  color: white;
+  text-decoration: none;
 }
 
 .phoneNumber:hover {
@@ -80,6 +81,8 @@ nav a:visited {
 
 .faxNumber {
   transition: 0.1s ease-in;
+  color: white;
+  text-decoration: none;
 }
 
 .faxNumber:hover {
@@ -104,6 +107,10 @@ nav a:visited {
   .footer-numbers {
     display: flex;
     flex-direction: row;
+  }
+
+  .phoneNumber {
+    margin-right: 0.75rem;
   }
 }
 @media (min-width: 1000px) {
@@ -144,15 +151,6 @@ nav a:visited {
     flex-direction: row;
   }
 }
-.main a:link {
-  color: white;
-  text-decoration: none;
-}
-
-.main a:visited {
-  text-decoration: none;
-}
-
 .main {
   width: 100%;
   height: 100%;
@@ -191,6 +189,7 @@ nav a:visited {
   outline: black 0.2rem solid;
   padding: 0.5rem;
   color: #f7f6ee;
+  text-decoration: none;
 }
 
 .main-text-button:hover {
@@ -246,11 +245,16 @@ nav a:visited {
   letter-spacing: 0.05rem;
 }
 
+#academically {
+  background-color: #c4b466;
+  padding: 4rem;
+}
+
 .academically {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 3.5rem;
   letter-spacing: 0.15rem;
-  color: #997300;
+  color: black;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -258,7 +262,7 @@ nav a:visited {
 }
 
 .academically:hover {
-  color: #c4b466;
+  color: #f7f6ee;
 }
 
 #academicallySection-cards {
@@ -274,6 +278,7 @@ nav a:visited {
   margin-right: 0;
   width: 100%;
   position: relative;
+  outline: 0.3rem solid #997300;
 }
 
 .academicallySection-cards img {
@@ -282,7 +287,7 @@ nav a:visited {
 
 .card {
   position: absolute;
-  background-color: rgba(247, 246, 238, 0.6);
+  background-color: rgba(247, 246, 238, 0.75);
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -344,10 +349,6 @@ nav a:visited {
     font-size: 1.5rem;
     padding: 0.6rem;
   }
-
-  .academicallySection-cards {
-    height: 25vh;
-  }
 }
 @media (min-width: 1000px) {
   .main-text-button {
@@ -387,7 +388,30 @@ nav a:visited {
   }
 
   #academicallySection-cards {
-    flex-direction: rows;
+    flex-direction: row;
+  }
+
+  .academicallySection-cards {
+    height: 50vh;
+    margin: 0;
+  }
+
+  .academicallySection-cards img {
+    width: auto;
+  }
+
+  #card-1 {
+    margin: 2rem;
+    margin-left: 0;
+  }
+
+  #card-2 {
+    margin: 2rem;
+  }
+
+  #card-3 {
+    margin: 2rem;
+    margin-right: 0;
   }
 }
 @media (min-width: 1400px) {

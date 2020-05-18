@@ -1,13 +1,3 @@
-.main a:link {
-  color: white;
-  text-decoration: none;
-}
-
-.main a:visited {
-  // color: white;
-  text-decoration: none;
-}
-
 .main {
   width: 100%;
   height: 100%;
@@ -46,6 +36,7 @@
   outline: black 0.2rem solid;
   padding: 0.5rem;
   color: $goldLight;
+  text-decoration: none;
 }
 
 .main-text-button:hover {
@@ -100,19 +91,25 @@
   letter-spacing: 0.05rem;
 }
 
+#academically {
+  background-color: $goldMid;
+  padding: 4rem;
+}
+
 .academically {
   font-family: $mainFont;
   font-size: 3.5rem;
   letter-spacing: 0.15rem;
-  color: $goldDark;
+  color: black;
   text-decoration: none;
   display: block;
   text-align: center;
   transition: 0.2s;
+  // background-color: $goldLight;
 }
 
 .academically:hover {
-  color: $goldMid;
+  color: $goldLight;
 }
 
 #academicallySection-cards {
@@ -128,6 +125,7 @@
   margin-right: 0;
   width: 100%;
   position: relative;
+  outline: 0.3rem solid $goldDark;
 }
 
 .academicallySection-cards img {
@@ -136,7 +134,7 @@
 
 .card {
   position: absolute;
-  background-color: rgba($goldLight, $alpha: 0.6);
+  background-color: rgba($goldLight, $alpha: 0.75);
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -145,11 +143,11 @@
 }
 
 .card:hover {
-  background-color: rgba($goldLight, $alpha: .9);
-  transition: .2s ease-in;
+  background-color: rgba($goldLight, $alpha: 0.9);
+  transition: 0.2s ease-in;
 }
 
-.card:hover .insideCard{
+.card:hover .insideCard {
   color: $goldDark;
 }
 
@@ -199,10 +197,6 @@
     font-size: 1.5rem;
     padding: 0.6rem;
   }
-
-  .academicallySection-cards {
-    height: 25vh;
-  }
 }
 
 @media (min-width: $laptop) {
@@ -244,7 +238,30 @@
   }
 
   #academicallySection-cards {
-    flex-direction: rows;
+    flex-direction: row;
+  }
+
+  .academicallySection-cards {
+    height: 50vh;
+    margin: 0;
+  }
+
+  .academicallySection-cards img {
+    width: auto;
+  }
+
+  #card-1 {
+    margin: 2rem;
+    margin-left: 0;
+  }
+
+  #card-2 {
+    margin: 2rem;
+  }
+
+  #card-3 {
+    margin:2rem;
+    margin-right: 0;
   }
 }
 
