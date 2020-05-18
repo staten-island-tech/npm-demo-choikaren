@@ -154,7 +154,7 @@ nav a:visited {
 .main {
   width: 100%;
   height: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 8%;
   position: relative;
 }
 
@@ -204,7 +204,7 @@ nav a:visited {
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 8%;
 }
 
 .missionStatement-images {
