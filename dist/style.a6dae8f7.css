@@ -271,7 +271,7 @@ nav a:visited {
 }
 
 .academicallySection-cards {
-  height: 20vh;
+  height: 15rem;
   overflow: hidden;
   margin: 1.2rem;
   margin-left: 0;
@@ -392,7 +392,7 @@ nav a:visited {
   }
 
   .academicallySection-cards {
-    height: 50vh;
+    height: 40rem;
     margin: 0;
   }
 
