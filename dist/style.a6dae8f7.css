@@ -1,0 +1,472 @@
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.nav {
+  font-size: 2rem;
+  font-family: "Frank Ruhl Libre", serif;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.nav-button {
+  color: white;
+  text-decoration: none;
+  margin: 1.3rem;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  color: #997300;
+}
+
+.footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-family: "Didact Gothic", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #f7f6ee;
+}
+
+.socialMedia-button {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.socialMedia-img {
+  width: 3rem;
+  margin: 0.7rem;
+}
+
+.socialMedia-img:hover {
+  filter: brightness(1.5);
+  transition: 0.2s ease-in-out;
+}
+
+.footer-numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneNumber {
+  transition: 0.1s ease-in;
+  color: white;
+  text-decoration: none;
+}
+
+.phoneNumber:hover {
+  color: #c4b466;
+}
+
+.faxNumber {
+  transition: 0.1s ease-in;
+  color: white;
+  text-decoration: none;
+}
+
+.faxNumber:hover {
+  color: #c4b466;
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) {
+  .nav {
+    text-align: left;
+  }
+
+  .socialMedia-img {
+    width: 3.5rem;
+    margin: 1rem;
+  }
+
+  .footer-numbers {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phoneNumber {
+    margin-right: 0.75rem;
+  }
+}
+@media (min-width: 1000px) {
+  .nav {
+    margin-top: 0;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  .nav-socialMedia {
+    text-align: right;
+  }
+
+  .nav-button {
+    margin-left: 2.5rem;
+    margin-right: 0;
+  }
+
+  .nav-button:hover {
+    margin-left: 3rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    margin-bottom: 0rem;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1400px) {
+  .footer {
+    font-size: 1.7rem;
+  }
+
+  .footer-numbers {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.main {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 8%;
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  position: relative;
+}
+
+.main-textbox {
+  z-index: 1;
+  position: absolute;
+  background-color: rgba(247, 246, 238, 0.75);
+  top: 15%;
+  left: 0;
+  padding: 5%;
+}
+
+.main-text {
+  font-size: 4rem;
+  color: #997300;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+#main-text-button {
+  margin-top: 1rem;
+}
+
+.main-text-button {
+  font-size: 1rem;
+  font-family: "Didact Gothic", sans-serif;
+  background-color: #997300;
+  outline: black 0.2rem solid;
+  padding: 0.5rem;
+  color: #f7f6ee;
+  text-decoration: none;
+}
+
+.main-text-button:hover {
+  background-color: #c4b466;
+  transition: 0.2s ease-in-out;
+  color: black;
+  outline: #997300 0.2rem solid;
+}
+
+.missionStatement {
+  background-color: #c4b466;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.missionStatement-images {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.missionStatement-images img {
+  width: 100%;
+}
+
+#missionStatement-text {
+  background-color: #f7f6ee;
+  margin: 2rem;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+}
+
+.missionStatement-text {
+  align-self: center;
+}
+
+.missionStatement-title {
+  font-family: "Frank Ruhl Libre", serif;
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.missionStatement-body {
+  font-family: "Didact Gothic", sans-serif;
+  color: #997300;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.05rem;
+}
+
+#academically {
+  padding: 4rem;
+  outline: 1rem solid #c4b466;
+  outline-offset: -1rem;
+}
+
+.academically {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.15rem;
+  color: #c4b466;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.academically:hover {
+  color: #f7f6ee;
+}
+
+#academicallySection-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.academicallySection-cards {
+  height: 15rem;
+  overflow: hidden;
+  margin: 1.2rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  position: relative;
+  outline: 0.3rem solid #997300;
+}
+
+.academicallySection-cards img {
+  width: 100%;
+}
+
+.card {
+  position: absolute;
+  background-color: rgba(247, 246, 238, 0.75);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: rgba(247, 246, 238, 0.9);
+  transition: 0.2s ease-in;
+}
+
+.card:hover .insideCard {
+  color: #997300;
+}
+
+.insideCard {
+  padding: 2rem;
+  text-align: center;
+  align-self: center;
+  color: black;
+}
+
+.card-title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.5rem;
+}
+
+.card-body {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1.5rem;
+}
+
+.card-subtext {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 1rem;
+}
+
+@media (min-width: 400px) {
+  .main-text {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 700px) {
+  .main-img {
+    margin-top: 2rem;
+  }
+
+  .main-textbox {
+    top: 25%;
+    left: 5%;
+  }
+
+  #main-text-button {
+    margin-top: 2rem;
+  }
+
+  .main-text-button {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+}
+@media (min-width: 1000px) {
+  .main-text-button {
+    font-size: 2rem;
+    padding: 0.7rem;
+  }
+
+  .missionStatement {
+    flex-direction: row;
+  }
+
+  .missionStatement-images {
+    flex-direction: column;
+    width: 275vw;
+  }
+
+  #missionStatement-text {
+    margin: 2.9rem;
+    padding: 3rem;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+
+  .missionStatement-title {
+    font-family: "Frank Ruhl Libre", serif;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .missionStatement-body {
+    font-family: "Didact Gothic", sans-serif;
+    color: #997300;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.05rem;
+  }
+
+  #academicallySection-cards {
+    flex-direction: row;
+  }
+
+  .academicallySection-cards {
+    height: 40rem;
+    margin: 0;
+  }
+
+  .academicallySection-cards img {
+    width: auto;
+  }
+
+  #card-1 {
+    margin: 2rem;
+    margin-left: 0;
+  }
+
+  #card-2 {
+    margin: 2rem;
+  }
+
+  #card-3 {
+    margin: 2rem;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1400px) {
+  .missionStatement-images {
+    flex-direction: column;
+    width: 250vw;
+  }
+
+  #missionStatement-text {
+    margin: 4rem;
+    padding: 5rem;
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+
+  .missionStatement-title {
+    font-family: "Frank Ruhl Libre", serif;
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .missionStatement-body {
+    font-family: "Didact Gothic", sans-serif;
+    color: #997300;
+    font-size: 1.75rem;
+    line-height: rem;
+    letter-spacing: 0.05rem;
+  }
+}
+html {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+@media (min-width: 1000px) {
+  body {
+    margin: 5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
