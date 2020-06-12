@@ -105,9 +105,12 @@ nav a:visited {
   color: $goldMid;
 }
 
+
+
 @media (max-width: $phone) {
   .logo {
     width: 100%;
+    
   }
 }
 
