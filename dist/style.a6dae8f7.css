@@ -461,23 +461,22 @@ nav a:visited {
 
 .contactus-text {
   align-self: center;
+  margin-left: 15rem;
 }
 
 .contactus-title {
   font-family: "Frank Ruhl Libre", serif;
   color: black;
-  font-size: 4rem;
+  font-size: 7rem;
   margin: 2rem;
-  margin-left: 35rem;
 }
 
 .contactus-body {
   font-family: "Didact Gothic", sans-serif;
   color: #997300;
   font-size: 2.5rem;
-  line-height: 2.25rem;
+  line-height: 4.25rem;
   letter-spacing: 0.05rem;
-  margin-left: 35rem;
   margin-bottom: 2rem;
 }
 
