@@ -1,0 +1,133 @@
+.contactus {
+    background-color: $goldMid;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-bottom: 8%;
+  }
+  
+  #contactus-text {
+    background-color: $goldLight;
+    margin: 3rem;
+    width:95%;
+    text-align: center;
+    display: flex;
+    align-self: center;
+  }
+  
+  .contactus-text {
+    align-self: center;
+  }
+  
+  .contactus-title {
+    font-family: $mainFont;
+    color: black;
+    font-size: 4rem;
+    margin: 2rem;
+    margin-left: 35rem;
+  }
+  
+  .contactus-body {
+    font-family: $secondaryFont;
+    color: $goldDark;
+    font-size: 2.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.05rem;
+    margin-left: 35rem;
+    margin-bottom: 2rem;
+  }
+  
+
+  @media (min-width: $tablet) {
+  
+    .contactus {
+      flex-direction: row;
+    }
+  
+    #contactus-text {
+      margin: 0rem;
+      padding: 0rem;
+      padding-right: 3rem;
+      padding-left: 0rem;
+    }
+  
+    .contactus-title {
+      font-family: $mainFont;
+      color: black;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 10rem;
+    }
+  
+    .contactus-body {
+      font-family: $secondaryFont;
+      color: $goldDark;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      letter-spacing: 0.05rem;
+      margin-left: 10rem;
+    }
+  }
+  
+  
+@media (min-width: $phone) {
+  .contactus {
+    flex-direction: row;
+  }
+
+  #contactus-text {
+    margin: 2.9rem;
+    padding: 3rem;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+
+  .contactus-title {
+    font-family: $mainFont;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 27rem;
+  }
+
+  .contactus-body {
+    font-family: $secondaryFont;
+    color: $goldDark;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.05rem;
+    margin-left: 27rem;
+  }
+}
+
+  @media (min-width: $laptop) {
+  
+    .contactus {
+      flex-direction: row;
+    }
+  
+    #contactus-text {
+      margin: 2.9rem;
+      padding: 3rem;
+      padding-right: 3.75rem;
+      padding-left: 3.75rem;
+    }
+  
+    .contactus-title {
+      font-family: $mainFont;
+      color: black;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 27rem;
+    }
+  
+    .contactus-body {
+      font-family: $secondaryFont;
+      color: $goldDark;
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      letter-spacing: 0.05rem;
+      margin-left: 27rem;
+    }
+  
+  }
