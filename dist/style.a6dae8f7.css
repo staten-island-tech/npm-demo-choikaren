@@ -527,8 +527,13 @@ nav a:visited {
 }
 
 @media (min-width: 400px) {
-  .main-text {
-    font-size: 6rem;
+  .about-textbox {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(247, 246, 238, 0.75);
+    top: 17%;
+    left: 18%;
+    padding: 12%;
   }
 }
 @media (min-width: 700px) {

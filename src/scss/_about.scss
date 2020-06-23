@@ -83,8 +83,13 @@
 }
 
 @media (min-width: $phone) {
-  .main-text {
-    font-size: 6rem;
+ .about-textbox {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba($goldLight, $alpha: 0.75);
+    top: 17%;
+    left: 18%;
+    padding: 12%;
   }
 }
 
