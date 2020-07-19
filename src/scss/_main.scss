@@ -1,0 +1,299 @@
+.main {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 8%;
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  position: relative;
+}
+
+.main-textbox {
+  z-index: 1;
+  position: absolute;
+  background-color: rgba($goldLight, $alpha: 0.75);
+  top: 15%;
+  left: 0;
+  padding: 5%;
+}
+
+.main-text {
+  font-size: 4rem;
+  color: $goldDark;
+  font-family: $mainFont;
+}
+
+#main-text-button {
+  margin-top: 1rem;
+}
+
+.main-text-button {
+  font-size: 1rem;
+  font-family: $secondaryFont;
+  background-color: $goldDark;
+  outline: black 0.2rem solid;
+  padding: 0.5rem;
+  color: $goldLight;
+  text-decoration: none;
+}
+
+.main-text-button:hover {
+  background-color: $goldMid;
+  transition: 0.2s ease-in-out;
+  color: black;
+  outline: $goldDark 0.2rem solid;
+}
+
+.missionStatement {
+  background-color: $goldMid;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  margin-bottom: 8%;
+}
+
+.missionStatement-images {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.missionStatement-images img {
+  width: 100%;
+}
+
+#missionStatement-text {
+  background-color: $goldLight;
+  margin: 2rem;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+}
+
+.missionStatement-text {
+  align-self: center;
+}
+
+.missionStatement-title {
+  font-family: $mainFont;
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.missionStatement-body {
+  font-family: $secondaryFont;
+  color: $goldDark;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.05rem;
+}
+
+#academically {
+  // background-color: $goldMid;
+  padding: 4rem;
+  outline: 1rem solid $goldMid;
+  outline-offset: -1rem;
+}
+
+.academically {
+  font-family: $mainFont;
+  font-size: 3.5rem;
+  letter-spacing: 0.15rem;
+  color: $goldMid;
+  text-decoration: none;
+  // display: block;
+  // text-align: center;
+  text-align: center;
+  transition: 0.2s;
+  // background-color: $goldLight;
+}
+
+.academically:hover {
+  color: $goldLight;
+}
+
+#academicallySection-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.academicallySection-cards {
+  height: 15rem;
+  overflow: hidden;
+  margin: 1.2rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  position: relative;
+  outline: 0.3rem solid $goldDark;
+}
+
+.academicallySection-cards img {
+  width: 100%;
+}
+
+.card {
+  position: absolute;
+  background-color: rgba($goldLight, $alpha: 0.75);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover {
+  background-color: rgba($goldLight, $alpha: 0.9);
+  transition: 0.2s ease-in;
+}
+
+.card:hover .insideCard {
+  color: $goldDark;
+}
+
+.insideCard {
+  padding: 2rem;
+  text-align: center;
+  align-self: center;
+  color: black;
+}
+
+.card-title {
+  font-family: $mainFont;
+  font-size: 2.5rem;
+}
+
+.card-body {
+  font-family: $secondaryFont;
+  font-size: 1.5rem;
+}
+
+.card-subtext {
+  font-family: $secondaryFont;
+  font-size: 1rem;
+}
+
+@media (min-width: $phone) {
+  .main-text {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main-img {
+    margin-top: 2rem;
+  }
+
+  .main-textbox {
+    top: 25%;
+    left: 5%;
+  }
+
+  #main-text-button {
+    margin-top: 2rem;
+  }
+
+  .main-text-button {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (min-width: $laptop) {
+  .main-text-button {
+    font-size: 2rem;
+    padding: 0.7rem;
+  }
+
+  .missionStatement {
+    flex-direction: row;
+  }
+
+  .missionStatement-images {
+    // margin-left: 5rem;
+    flex-direction: column;
+    width: 275vw;
+  }
+
+  #missionStatement-text {
+    margin: 2.9rem;
+    padding: 3rem;
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+
+  .missionStatement-title {
+    font-family: $mainFont;
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .missionStatement-body {
+    font-family: $secondaryFont;
+    color: $goldDark;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.05rem;
+  }
+
+  #academicallySection-cards {
+    flex-direction: row;
+  }
+
+  .academicallySection-cards {
+    height: 40rem;
+    margin: 0;
+  }
+
+  .academicallySection-cards img {
+    width: auto;
+  }
+
+  #card-1 {
+    margin: 2rem;
+    margin-left: 0;
+  }
+
+  #card-2 {
+    margin: 2rem;
+  }
+
+  #card-3 {
+    margin:2rem;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .missionStatement-images {
+    // margin-left: 5rem;
+    flex-direction: column;
+    width: 250vw;
+  }
+
+  #missionStatement-text {
+    margin: 4rem;
+    padding: 5rem;
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+
+  .missionStatement-title {
+    font-family: $mainFont;
+    color: black;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .missionStatement-body {
+    font-family: $secondaryFont;
+    color: $goldDark;
+    font-size: 1.75rem;
+    line-height: rem;
+    letter-spacing: 0.05rem;
+  }
+}
